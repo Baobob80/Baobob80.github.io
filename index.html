@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,16 +20,24 @@
 
     <section>
         <h2>Projects</h2>
-        <ul>
-            <li><a href="projects/project1.ipynb">Data Analysis in Python</a></li>
-            <li><a href="projects/project2.ipynb">Machine Learning Model</a></li>
-            <li><a href="projects/project3.ipynb">Web Scraping with Python</a></li>
-        </ul>
+        <div class="project">
+            <img src="images/project1.jpg" alt="Data Analysis in Python">
+            <p><a href="projects/project1.ipynb">Data Analysis in Python</a></p>
+        </div>
+        <div class="project">
+            <img src="images/project2.jpg" alt="Machine Learning Model">
+            <p><a href="projects/project2.ipynb">Machine Learning Model</a></p>
+        </div>
+        <div class="project">
+            <img src="images/project3.jpg" alt="Web Scraping with Python">
+            <p><a href="projects/project3.ipynb">Web Scraping with Python</a></p>
+        </div>
     </section>
 
     <section>
         <h2>Contact</h2>
-        <p>Feel free to reach out via <a href="mailto:baobob80@gmail.com">email</a> or <a href="https://github.com/Baobob80">GitHub</a>.</p>
+        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:baobob80@gmail.com">Email</a></p>
+        <p><i class="fa-brands fa-github"></i> <a href="https://github.com/Baobob80">GitHub</a></p>
     </section>
 </body>
 </html>
