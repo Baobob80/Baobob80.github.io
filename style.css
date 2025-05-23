@@ -6,6 +6,9 @@ body {
     color: #fff;
     margin: 0;
     padding: 0;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    max-width: 1200px;
+    margin: auto;
 }
 
 header {
@@ -24,7 +27,7 @@ section {
     margin: 40px auto;
     padding: 20px;
     width: 80%;
-    background: white;
+    background: rgba(255, 255, 255, 0.85);
     color: black;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
@@ -62,6 +65,7 @@ a {
     text-decoration: none;
     color: #0073e6;
     font-weight: bold;
+    transition: color 0.3s ease-in-out;
 }
 
 a:hover {
@@ -80,4 +84,10 @@ a:hover {
 
 .project img:hover {
     transform: scale(1.05);
+}
+
+/* Ikone u kontakt sekciji */
+.fa-solid, .fa-brands {
+    font-size: 24px;
+    margin-right: 10px;
 }
