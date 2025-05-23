@@ -1,8 +1,9 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
-    background-color: #f5f5f5;
-    color: #333;
+    background: url('https://source.unsplash.com/1920x1080/?technology') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
     margin: 0;
     padding: 0;
 }
@@ -12,6 +13,11 @@ header {
     color: white;
     padding: 20px;
     font-size: 24px;
+    transition: background-color 0.5s ease-in-out;
+}
+
+header:hover {
+    background: #005bb5;
 }
 
 section {
@@ -19,8 +25,23 @@ section {
     padding: 20px;
     width: 80%;
     background: white;
+    color: black;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 h2 {
@@ -47,33 +68,16 @@ a:hover {
     color: #005bb5;
     text-decoration: underline;
 }
-/* Animacija za zaglavlje */
-header {
-    background: #0073e6;
-    color: white;
-    padding: 20px;
-    font-size: 24px;
-    transition: background-color 0.5s ease-in-out;
+
+/* Projekti - slike */
+.project img {
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
 }
 
-header:hover {
-    background: #005bb5;
-}
-
-/* Efekat pri pojavljivanju sekcija */
-section {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeIn 1s ease-in-out forwards;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.project img:hover {
+    transform: scale(1.05);
 }
